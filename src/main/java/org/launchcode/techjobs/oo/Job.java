@@ -51,22 +51,22 @@ public class Job {
     @Override
     public String toString() {
         String emptyString = "Data not available";
-        if (name == null || name.equals("")) {
+        if (name.equals("")) {
             name = emptyString;
         }
-        if (employer == null || employer.getValue().equals("")) {
+        if (employer.getValue().equals("")) {
             assert employer != null;
             employer.setValue(emptyString);
         }
-        if (location == null || location.getValue().equals("")) {
+        if (location.getValue().equals("")) {
             assert location != null;
             location.setValue(emptyString);
         }
-        if (positionType == null || positionType.getValue().equals("")) {
+        if (positionType.getValue().equals("")) {
             assert positionType != null;
             positionType.setValue(emptyString);
         }
-        if (coreCompetency == null || coreCompetency.getValue().equals("")) {
+        if (coreCompetency.getValue().equals("")) {
             assert coreCompetency != null;
             coreCompetency.setValue(emptyString);
         }
